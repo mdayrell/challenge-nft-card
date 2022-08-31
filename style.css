@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    width: 275px;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.75);
+}
+
+.conteudo {
+    position: relative;
+    width: 100%;
+}
+
+.imagem-princ {
+    position: relative;
+}
+
+.imagem-princ img{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+.view-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    border-radius: 10px;
+    display: none;
+}
+
+.view-overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem-princ:hover .view-overlay{
+    display: block;
+    cursor: pointer;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.descricao {
+    margin: 1rem 0 1rem 0;
+    color: hsl(215, 51%, 70%);
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.preco-dias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.preco {
+    display: flex;
+    color: hsl(178, 100%, 50%);
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.preco img{
+    margin-right: 5px;
+}
+
+.dias {
+    display: flex;
+    color: hsl(215, 51%, 70%);
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.dias img {
+    margin-right: 4px;
+}
+
+.foto-perfil {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+}
+
+.avatar {
+    border: 1px solid white;
+    border-radius: 65px;
+    width: 30px;
+    margin-right: 0.5rem;
+}
+
+span {
+ color: hsl(0, 0%, 100%);
+ margin-left: 4px;
+}
+
+span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+
